@@ -1,0 +1,55 @@
+html, body {
+  height: 100vh;
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-rows: 40px 50px 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'header'
+                       'filter'
+                       'chart';
+}
+
+.header {
+  background-color: #5896e6;
+  color: #fff;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  flex-grow: 1;
+}
+
+.header-username {
+  flex-grow: 5;
+}
+
+.header-salesreport {
+  flex-grow: 4;
+}
+
+.fa-circle {
+  color: #f00;
+}
+
+.filter-panel {
+  grid-area: filter;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filter-panel label,
+.filter-panel select {
+  font-size: .75em;
+}
+
+.highcharts-figure {
+  grid-area: chart;
+  margin: 0;
+}
+
